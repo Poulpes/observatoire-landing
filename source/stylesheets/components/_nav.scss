@@ -7,12 +7,20 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media(max-width: 440px) {
+    flex-direction: initial;
+    bottom: initial;
+    right: 0;
+  }
 }
 
 .nav-container {
   background-color: #43676C;
   padding: 10px 20px;
   border-radius: 50px;
+  @media(max-width: 440px) {
+    display: flex;
+  }
 }
 
 .nav-item {
@@ -55,5 +63,8 @@
         fill: #43676C;
       }
     }
+  }
+  @media (max-width: 440px) {
+    margin: 0 10px;
   }
 }

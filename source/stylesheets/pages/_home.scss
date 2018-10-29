@@ -31,6 +31,20 @@
       }
     }
   }
+  @media (max-width: 768px) {
+    > div {
+      max-width: 90%;
+    }
+  }
+  @media(max-width: 440px) {
+
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+  }
 }
 
 .home, #description {
@@ -58,6 +72,15 @@
   text-align: center;
   border-radius: 5px;
   font-weight: 300;
+  @media (max-width: 768px) {
+    width: 75%;
+  }
+  @media (max-width: 440px) {
+    width: 90%;
+    padding: 30px;
+    font-size: 16px;
+    line-height: 2;
+  }
 }
 
 .home, #description, .barometre {
@@ -140,6 +163,51 @@
       p {
         padding-right: 20px;
       }
+    }
+    @media (max-width: 768px) {
+      flex-direction: column;
+      margin: 10px 0;
+      > div {
+        width: 100%;
+      }
+      img {
+        max-width: 100%;
+        height: inherit;
+      }
+      h3 {
+        padding: 0;
+        font-size: 20px;
+      }
+      p {
+        padding-left: 0;
+      }
+      &.left {
+        h3 {
+          margin-left: 0;
+        }
+      }
+      &.right {
+        text-align: left;
+        > div {
+          order: 3;
+        }
+        h3 {
+          margin-right: 0;
+        }
+        p {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    width: 90%;
+  }
+  @media (max-width: 768px) {
+    width: 95%;
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 30px;
     }
   }
 }
