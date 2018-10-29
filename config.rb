@@ -23,3 +23,15 @@ activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
 end
+
+helpers do
+  def inline_svg(name)
+    root = Middleman::Application.root
+    file_path = "#{root}/source/images/#{name}.svg"
+    if File.exists?(file_path)
+      File.read(file_path)
+    else
+      "not found"
+    end
+  end
+end
