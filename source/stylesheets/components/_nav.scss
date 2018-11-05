@@ -32,6 +32,13 @@
       display: block;
     }
   }
+  @media (max-width: 768px) {
+    &:hover {
+      .nav-text {
+        display: none;
+      }
+    }
+  }
 }
 
 .nav-text {
@@ -61,6 +68,14 @@
       background-color: white;
       .fill {
         fill: #43676C;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    &:hover {
+      background-color: inherit;
+      .fill {
+        fill: inherit;
       }
     }
   }
