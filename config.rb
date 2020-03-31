@@ -1,3 +1,7 @@
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-72292246-3'
+end
+
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
